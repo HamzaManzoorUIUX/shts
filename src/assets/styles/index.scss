@@ -1,0 +1,66 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+.social-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        a {
+            padding: .25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: #272727;
+            line-height: 1;
+        }
+    }
+}
+
+.custom-carousel {
+    height: calc(100vh - 175px);
+    object-fit: cover;
+}
+
+.my-service-card {
+    position: relative;
+    height: 200px;
+    box-shadow: 0px 0px 20px #27272740;
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+    overflow: hidden;
+
+    &:hover {
+        .my-service-card-hover {
+            bottom: 0px;
+        }
+    }
+
+    .my-service-card-hover {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: -100%;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        color: white;
+        background-color: #27272780;
+        transition: all 0.2s ease;
+
+    }
+
+    img {
+        width: auto !important;
+        height: 100%;
+        display: block;
+        margin: auto;
+        // object-fit: contain;
+    }
+}
